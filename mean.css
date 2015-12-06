@@ -26,19 +26,19 @@ transition: 0.6s;
 @media screen and (min-width:1024px){
   html{
     background-color: #EFEFEF;
+/* permet de définir la transition entre deux états d'un élément */
     transition: 1s;
   }
-/* transition pour que le changement de taille d'écran ne soit pas trop brusque */
 
   header{
     background-color: transparent;
     transition: 0.5s;
+/* transition pour que le changement de taille d'écran ne soit pas trop brusque */
   }
-/* permet de définir la transition entre deux états d'un élément */
 
   .parent{
     margin: 2% 12%;
-/* FlexBox revolution! */
+/* FlexBox revolution http://flexboxfroggy.com/ */
     display: flex;
     align-items: center;
   }
@@ -48,7 +48,7 @@ transition: 0.6s;
   .enfant{
     padding: 5%;
   }
-  /* *** cf css selector http://flukeout.github.io/ *** */
+  /* *** cf le jeu css selector http://flukeout.github.io/ *** */
   .parent:first-of-type{
     flex-direction: column;
     margin: 2% 0;
@@ -57,7 +57,6 @@ transition: 0.6s;
     width: auto;
     margin-bottom: 3%;
   }
-
   .parent:first-of-type .enfant {
     background-color: grey;
     color: white;
@@ -76,24 +75,23 @@ transition: 0.6s;
     height: 3em;
     transition: 0.5s;
   }
-
   #conteneur{
     display: flex;
     justify-content: center;
+/* La propriété flex-wrap définit si le contenu sera distribué
+sur une seule ligne (ou colonne selon l’axe principal) ou sur plusieurs lignes. */
     flex-wrap: wrap;
     flex-direction: row;
   }
-
   .parent{
+/* la div parent réduit de moitié car l'écran est + petit*/
     width: 50%;
     padding: 2% 5%;
     text-align: center;
   }
-
-.enfant{
+ .enfant{
     margin: 2% auto;
   }
-
   .img{
     width: 100%;
   }
@@ -105,21 +103,20 @@ transition: 0.6s;
 h1{
     font-size: 2em;
   }
-
   #conteneur{
     flex-direction: column;
   }
-
   .parent{
     width: 100%;
     margin: 2% auto;
   }
-
-  .enfant p {
-    display: none;
-  }
-
   .img{
     max-width: 400px;
   }
+  p {
+    display: none;
+  }
+/* on met un display none car on affiche seulement le titre <h2> */
+
+
 }
